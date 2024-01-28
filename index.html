@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Save The World </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+	<section>
+		<header>
+			<a href="#" class="logo">World</a>
+			<div class="toggle"></div>
+		</header>
+		<img src="bg.jpg" class="bg">
+		<img src="bird.png" class="bird">
+		<div class="content">
+			<h2>We Can Save The<br><span>Planet Earth</span></h2>
+			<p>The scale of the challenges facing our planet can seem daunting, but we can all do something. Here are 10 simple 
+				ways you can help reduce your impact, and help in the fight against climate change
+			</p>
+		<a href="#">Join Us</a>				
+		</div>
+		<ul class="sci">
+			<li><a href="#"><img src="facebook.png"></a></li>
+			<li><a href="#"><img src="twitter.png"></a></li>
+			<li><a href="#"><img src="instagram.png"></a></li>
+		</ul>
+		<div class="textBlocks">
+			<div class="block">
+				<h3>Defender of Earth</h3>
+				<p>We know you love watching videos on your phone. But modern activities— such as plugging in devices, 
+				</p>
+			</div>
+			<div class="block">
+				<h3>How to Save Water</h3>
+				<p>We need water for drinking, cooking, sanitation and washing.
+
+					
+				</p>
+			</div>
+		</div>
+
+	</section>
+	
+	
+		
+	<script type="text/javascript">
+		document.addEventListener("mousemove", function(e){
+			const bg = document.querySelector('.bg');
+			const bird = document.querySelector('.bird');
+			const content = document.querySelector('.content');
+
+			bg.style.width = 100 + e.pageX/100 + '%';
+			bg.style.height = 100 + e.pageX/100 + '%';
+
+			bird.style.right = 100 + e.pageX/2 + 'px';
+			content.style.left = 100 + e.pageX/2.5 + 'px';
+		})
+
+
+</script>
+</body>
+</html>
